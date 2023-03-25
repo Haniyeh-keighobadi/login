@@ -83,3 +83,68 @@ body,html{
 // @media (min-width: 500px) and (orientation: landscape) {
 //     /* … */
 //   }
+@media (max-width: 1318px){
+    .form{
+        width: 1100px;
+    }
+    .background{
+        width: 600px;
+    }
+
+}
+@media (max-width: 1216px){
+    // .form{
+    //     width: 1100px;
+    // }
+    .background{
+        width: 500px;
+    }
+    .formPic{
+        margin-left: 0px;
+       
+    }
+    .form{
+        width: 1000px;
+    }
+
+    
+}
+@media (max-width: 1130px){
+    .form{
+        width: 900px;
+    }
+   
+    .background{
+        width: 400px;
+    }
+    .tree{
+        width: 400px;
+    }
+
+
+}
+@media (max-width: 1002px){
+    .form{
+        width: 800px;
+    }
+    .formLogin{
+        width: 350px;
+    }
+
+
+}
+@media (max-width: 900px){
+    .form{
+        width: 700px;
+    }
+    .formLogin{
+        width: 300px;
+    }
+    .background{
+        width: 350px;
+    }
+    .tree{
+        width: 350px;
+    }
+
+}
