@@ -6,8 +6,14 @@ body,html{
     flex-direction: row;
 }
 .formPic{
-    margin-left: 80px;
-  
+    margin-left: 100px;
+   
+}
+.background{
+    width: 700px;
+    height: 550px;
+    border-radius: 8px 0px 0px 8px;
+    background-color: rgba(227, 245, 255,.8);
 }
 
 .tree{
@@ -15,33 +21,62 @@ body,html{
     height: 500px;
 }
 .formLogin{
+    display: flex;
+    flex-direction: column;
     width: 400px;
     height: 500px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 .formInput{
     margin-right: 0px;
-    margin-top: 120px;
+    margin-top: 30px;
     text-align: center;
+    width: 270px;
 }
 .formInput2{
-    margin-right: 0px;
+    margin-right:0px;
     margin-top: 20px;
+    width: 270px;
 }
-.submitBtn{
+.loginBtn{
     margin-top: 15px;
     margin-right: 0px;
-    width: 210px;
+    width: 130px;
+
+}
+.signuptBtn{
+    margin-top: -35px;
+    margin-right: 140px;
+    width: 130px;
 
 }
 .form{
+    border-radius: 8px;
+    //box-shadow: 2px 2px 2px 5px rgba(34, 36, 38,.1);
+    -webkit-box-shadow: 2px 0px 13px 6px rgba(212,212,212,0.86);
+    -moz-box-shadow: 2px 0px 13px 6px rgba(212,212,212,0.86);
+    box-shadow: 2px 0px 13px 6px rgba(212,212,212,0.86);
     align-items: center;
     align-content: center;
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     margin-top: 35px;
     margin-left: 80px;
     width: 1200px;
     height: 550px;
+}
+.userIcon{
+    width: 80px;
+    height: 80px;
+    margin-top: -10px;
+    margin-right: 100px;
+   
+}
+.loginlable{
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.passlable{
+    margin-right: 5px;
+    margin-top: 25px;
 }
