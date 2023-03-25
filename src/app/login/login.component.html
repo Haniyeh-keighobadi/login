@@ -1,0 +1,55 @@
+<div class="lbl-header" dir="rtl">
+  <label for="" dir="rtl">ثبت نام</label>
+</div>
+<!-- <form class="example-form"> -->
+    <div class="tbl">
+    <table class="example-full-width" cellspacing="0"><tr>
+      
+      <td>
+        <mat-form-field class="example-full-width inp  " dir="rtl">
+        <mat-label dir="rtl">نام</mat-label>
+        <input matInput [(ngModel)]="FirstName" name="FirstName"  [ngModelOptions]="{standalone: true}">
+      </mat-form-field></td>
+      <td>
+        <mat-form-field class="example-full-width inp last" dir="rtl" >
+        <mat-label dir="rtl">نام خانوادگی</mat-label>
+        <input matInput [(ngModel)]="LastName" name="LastName" >
+      </mat-form-field>
+    </td></tr>
+      <tr>
+        <td><mat-form-field class="example-full-width top email" dir="rtl">
+          <mat-label dir="rtl">ایمیل</mat-label>
+          <input matInput type="email" [(ngModel)]="Email" name="Email" required="required">
+        </mat-form-field>
+      </td>
+    </tr>
+      <tr>
+        <td><mat-form-field class="example-full-width top email" dir="rtl">
+          <mat-label dir="rtl">پسورد</mat-label>
+          <input matInput type="password" [(ngModel)]="Password" name="Password" required="required">
+        </mat-form-field></td></tr>
+    </table>
+    <table class="example-full-width" cellspacing="0">
+    <tr>
+        <td><mat-form-field appearance="fill" class="select-margin top" dir="rtl">
+            <mat-label dir="rtl">جنسیت</mat-label>
+            <mat-select disableRipple [(ngModel)]="Gender" name="Gender">
+              <mat-option value="مرد">مرد</mat-option>
+              <mat-option value="زن">زن</mat-option>
+            </mat-select>
+          </mat-form-field></td>
+<td>
+  <mat-form-field  class="select-margin birth top" dir="rtl">
+    <input #dateInput matInput dir="rtl" [matDatepicker]="picker" [(ngModel)]="Birthday" (dateChange)="dateChange($event,dateInput,picker)"  placeholder="انتخاب تاریخ">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</td>
+      </tr>
+</table>
+<button mat-raised-button class="btnsub" mat-raised-button color="primary" (click)="onsubmit()">Submit</button>
+<button mat-raised-button class="btndel" mat-raised-button color="primary" (click)="ondelete()">Delete</button>
+</div>
+  <!-- </form> -->
+  
+
