@@ -52,7 +52,6 @@ body,html{
 }
 .form{
     border-radius: 8px;
-    //box-shadow: 2px 2px 2px 5px rgba(34, 36, 38,.1);
     -webkit-box-shadow: 2px 0px 13px 6px rgba(212,212,212,0.86);
     -moz-box-shadow: 2px 0px 13px 6px rgba(212,212,212,0.86);
     box-shadow: 2px 0px 13px 6px rgba(212,212,212,0.86);
@@ -90,12 +89,9 @@ body,html{
     .background{
         width: 600px;
     }
-
 }
+
 @media (max-width: 1216px){
-    // .form{
-    //     width: 1100px;
-    // }
     .background{
         width: 500px;
     }
@@ -106,9 +102,8 @@ body,html{
     .form{
         width: 1000px;
     }
-
-    
 }
+
 @media (max-width: 1130px){
     .form{
         width: 900px;
@@ -120,9 +115,8 @@ body,html{
     .tree{
         width: 400px;
     }
-
-
 }
+
 @media (max-width: 1002px){
     .form{
         width: 800px;
@@ -130,9 +124,8 @@ body,html{
     .formLogin{
         width: 350px;
     }
-
-
 }
+
 @media (max-width: 900px){
     .form{
         width: 700px;
@@ -148,3 +141,5 @@ body,html{
     }
 
 }
+
+@media (orientation: landscape) {}
