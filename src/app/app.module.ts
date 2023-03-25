@@ -20,7 +20,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import{ CitytableComponent} from './citytable/citytable.component'
+import{ CitytableComponent} from './citytable/citytable.component';
+import {Login2Component} from "./login2/login2.component";
 const MY_DATE_FORMATS = {
   parse: {
     dateInput: { month: 'short', year: 'numeric', day: 'numeric' }
@@ -38,7 +39,8 @@ const MY_DATE_FORMATS = {
     AppComponent,
     LoginComponent,
     DatatableComponent,
-    CitytableComponent
+    CitytableComponent,
+    Login2Component
   ],
   imports: [
     BrowserModule,
