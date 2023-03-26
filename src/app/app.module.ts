@@ -25,6 +25,8 @@ import {Login2Component} from "./login2/login2.component";
 import{DashboardComponent}from"./dashboard/dashboard.component";
 import { RouterModule, Routes } from '@angular/router';
 import {MatListModule} from '@angular/material/list';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 const appRoute:Routes=[
   {path:'login' ,component:Login2Component},
   {path:'home' ,component:DashboardComponent}
@@ -70,7 +72,8 @@ const MY_DATE_FORMATS = {
     MatPaginatorModule,
     MatSnackBarModule,
     MatListModule,
-    RouterModule.forRoot(appRoute)
+    RouterModule.forRoot(appRoute),
+    FontAwesomeModule
 
   ],
   providers: [  { provide: MAT_DATE_LOCALE, useValue: 'fa-IR' },

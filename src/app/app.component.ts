@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { faCoffee ,faSearch} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test';
+  faCoffee=faCoffee;
+  faSearch=faSearch;
 }

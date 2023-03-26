@@ -13,15 +13,19 @@
     <!-- <button mat-fab extended class="header-button">کمک آنلاین</button> -->
     <div class="menu" dir="rtl">
         <div class="profile">
-            <img src="user.jpg" class="profile-img" alt="">
+            <img src="user.jpg" class="profile-img" alt="img">
             <mat-label class="profile-lbl">حانیه کیقبادی</mat-label>
+            <!-- <fa-icon [icon]="faCoffee"></fa-icon> -->
         </div>
         <mat-list role="list" dir="rtl">
-            <mat-list-item role="listitem" class="top-border"><mat-label>کاربران</mat-label></mat-list-item>
+            <!-- <fa-icon [icon]="faSearch"></fa-icon> -->
+            <mat-list-item role="listitem" class="top-border"><mat-label><fa-icon [icon]="faUser"></fa-icon>کاربران</mat-label></mat-list-item>
             <mat-list-item role="listitem"><mat-label>خدمات و هدایا</mat-label></mat-list-item>
             <mat-list-item role="listitem"><mat-label>پرسنل(کارمندان)</mat-label></mat-list-item>
-            <mat-list-item role="listitem"><mat-label>جستجو</mat-label></mat-list-item>
-            <mat-list-item role="listitem"><mat-label>تنظیمات</mat-label></mat-list-item>
+            <mat-list-item role="listitem"><mat-label>
+                <fa-icon [icon]="faSearch"></fa-icon>جستجو</mat-label>
+            </mat-list-item>
+            <mat-list-item role="listitem"><mat-label><fa-icon [icon]="faCog"></fa-icon></mat-label>تنظیمات </mat-list-item>
           </mat-list>
     </div>
 </div>
