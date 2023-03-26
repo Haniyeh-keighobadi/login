@@ -22,6 +22,13 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import{ CitytableComponent} from './citytable/citytable.component';
 import {Login2Component} from "./login2/login2.component";
+import{Page1Component}from"./page1/page1.component";
+import { RouterModule, Routes } from '@angular/router';
+const appRoute:Routes=[
+  {path:'login' ,component:Login2Component},
+  {path:'home' ,component:Page1Component}
+]
+
 const MY_DATE_FORMATS = {
   parse: {
     dateInput: { month: 'short', year: 'numeric', day: 'numeric' }
@@ -40,7 +47,8 @@ const MY_DATE_FORMATS = {
     LoginComponent,
     DatatableComponent,
     CitytableComponent,
-    Login2Component
+    Login2Component,
+    Page1Component
   ],
   imports: [
     BrowserModule,
@@ -59,7 +67,8 @@ const MY_DATE_FORMATS = {
     MatNativeDateModule,
     MatExpansionModule,
     MatPaginatorModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    RouterModule.forRoot(appRoute)
 
   ],
   providers: [  { provide: MAT_DATE_LOCALE, useValue: 'fa-IR' },
