@@ -142,4 +142,123 @@ body,html{
 
 }
 
-@media (orientation: landscape) {}
+@media (max-width:808px) {
+    .formPic{
+        display: none;
+    }
+    .background{
+        display: none;
+    }
+    .form{
+        width: 550px;
+    }
+    .formLogin{
+        margin-left: 110px;
+
+    }
+}
+@media (max-width:676px) {
+    .form{
+        width: 450px;
+    }
+    .formLogin{
+        margin-left: 60px;
+    }
+}
+@media (max-width:572px) {
+    .form{
+        width: 350px;
+    }
+    .formLogin{
+        margin-left: 14px;
+    }
+}
+@media (max-width:453px) {
+    .form{
+        width: 250px;
+        margin-left: 60px;
+    }
+    .formInput{
+        width: 170px;
+        margin-right: 40px;
+    }
+    .formInput2{
+        width: 170px;
+        margin-right: 40px;
+    }
+    .loginBtn{
+        width: 65px;
+        margin-right: 50px;
+    }
+    .signuptBtn{
+        width: 65px;
+        margin-right:140px;
+    }
+    .userIcon{
+        width: 60px;
+        height: 60px;
+        margin-top: -10px;
+        margin-right: 100px;
+       
+    }
+    .loginlable{
+        margin-top: 20px;
+        margin-right: 93px;
+    }
+    .passlable{
+        margin-right: 45px;
+        margin-top: 25px;
+    }
+}
+@media (max-width:344px) {
+    .form{
+        margin-left: 40px;
+    }
+}
+@media (max-width:344px) {
+  
+    .formInput{
+        width: 150px;
+        margin-right: 50px;
+    }
+    .formInput2{
+        width: 150px;
+        margin-right: 50px;
+    }
+    .loginBtn{
+        width: 25px;
+        margin-right: 45px;
+    }
+    .signuptBtn{
+        width: 45px;
+        margin-right:145px;
+    }
+    .userIcon{
+        width: 60px;
+        height: 60px;
+        margin-top: -10px;
+        margin-right: 90px;
+       
+    }
+    .loginlable{
+        margin-top: 20px;
+        margin-right: 83px;
+    }
+    .passlable{
+        margin-right: 80px;
+        margin-top: 25px;
+    }
+
+}
+@media (max-width:304px) {
+    .form{
+        margin-left: 15px;
+    }
+}
+@media (max-width:275px) {
+    .form{
+        margin-top: 100px;
+        width: 200px;
+    }
+
+}
