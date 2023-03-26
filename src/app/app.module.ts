@@ -22,12 +22,12 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import{ CitytableComponent} from './citytable/citytable.component';
 import {Login2Component} from "./login2/login2.component";
-import{Page1Component}from"./page1/page1.component";
+import{DashboardComponent}from"./dashboard/dashboard.component";
 import { RouterModule, Routes } from '@angular/router';
 import {MatListModule} from '@angular/material/list';
 const appRoute:Routes=[
   {path:'login' ,component:Login2Component},
-  {path:'home' ,component:Page1Component}
+  {path:'home' ,component:DashboardComponent}
 ]
 
 const MY_DATE_FORMATS = {
@@ -49,7 +49,7 @@ const MY_DATE_FORMATS = {
     DatatableComponent,
     CitytableComponent,
     Login2Component,
-    Page1Component
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
