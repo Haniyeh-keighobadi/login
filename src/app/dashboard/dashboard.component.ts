@@ -1,6 +1,6 @@
 import { Component,Input,Output,EventEmitter } from '@angular/core';
 import {MatInputModule} from '@angular/material/input';
-import { faCoffee ,faSearch, faCog, faUser} from '@fortawesome/free-solid-svg-icons';
+import { faCoffee ,faSearch, faCog, faUser,faPowerOff} from '@fortawesome/free-solid-svg-icons';
 @Component({
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html',
@@ -12,4 +12,5 @@ import { faCoffee ,faSearch, faCog, faUser} from '@fortawesome/free-solid-svg-ic
     faSearch=faSearch;
     faCog=faCog;
     faUser=faUser;
+    faPowerOff=faPowerOff;
   }

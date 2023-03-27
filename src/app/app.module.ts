@@ -29,7 +29,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 const appRoute:Routes=[
   {path:'login' ,component:Login2Component},
-  {path:'home' ,component:DashboardComponent}
+  {path:'home' ,component:DashboardComponent},
+  {path:'main',component:DashboardComponent},
+  {path:'user',component:DatatableComponent},
+  {path:'search',component:CitytableComponent}
 ]
 
 const MY_DATE_FORMATS = {

@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="/app/fonts/css/fontawesome.min.css">
 <div dir="rtl" class="container">
     <div class="header" dir="rtl">
+        <mat-label class="lblpower"><fa-icon class="power" [icon]="faPowerOff"></fa-icon></mat-label>
     </div>
     <div class="menu" dir="rtl">
         <div class="profile">
@@ -10,11 +11,11 @@
         </div>
         <mat-list role="list" dir="rtl">
             <!-- <fa-icon [icon]="faSearch"></fa-icon> -->
-            <mat-list-item role="listitem" class="top-border"><mat-label>کاربران</mat-label></mat-list-item>
+            <mat-list-item role="listitem" class="top-border"><mat-label><a href="user">کاربران</a></mat-label></mat-list-item>
             <!-- <fa-icon [icon]="faUser"></fa-icon> -->
             <mat-list-item role="listitem"><mat-label>خدمات و هدایا</mat-label></mat-list-item>
             <mat-list-item role="listitem"><mat-label>پرسنل(کارمندان)</mat-label></mat-list-item>
-            <mat-list-item role="listitem"><mat-label>جستجو
+            <mat-list-item role="listitem"><mat-label><a href="search">جستجو</a>
                 <fa-icon [icon]="faSearch"></fa-icon></mat-label>
             </mat-list-item>
             <mat-list-item role="listitem"><mat-label>تنظیمات<fa-icon [icon]="faCog"></fa-icon></mat-label> </mat-list-item>

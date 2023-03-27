@@ -17,7 +17,7 @@
             <mat-label>کلمه عبور</mat-label>
             <input matInput type="text"  [(ngModel)]="password" name="password">
           </mat-form-field>
-          <button mat-raised-button class="loginBtn" dir="rtl" (click)="onsubmit()">ورود</button>
+          <a href="main"><button mat-raised-button class="loginBtn" dir="rtl" (click)="onsubmit()"  disabled="{{buttonDisabled}}">ورود</button></a>
           <button mat-raised-button class="signuptBtn" dir="rtl">ثبت نام</button>
           <mat-label class="passlable"><a href="https://www.google.com">بازیابی کلمه عبور</a></mat-label>
     </div>

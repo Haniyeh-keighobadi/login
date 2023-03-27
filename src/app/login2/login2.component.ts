@@ -22,14 +22,15 @@ export interface DialogData {
     templateUrl: './login2.component.html',
     styleUrls: ['./login2.component.scss']
   })
+  
   export class Login2Component  {
-    
-    // constructor(
-    //   private _snackBar: MatSnackBar,
-    //   private fb: FormBuilder,
-    //   public dialogRef: MatDialogRef<Login2Component>,
-    //   @Inject(MAT_DIALOG_DATA) public data: DialogData,
-    // ) {}
+    buttonDisabled: boolean;
+    constructor(
+      private _snackBar: MatSnackBar,
+      // private fb: FormBuilder,
+      // public dialogRef: MatDialogRef<Login2Component>,
+      // @Inject(MAT_DIALOG_DATA) public data: DialogData,
+    ) {}
 
     ngOnInit(): void {
     }
@@ -53,12 +54,18 @@ export interface DialogData {
        
         }
         if(this.username==='h.keighobadi'&&this.password==='123456'){
+          this.buttonDisabled = false;
+          this._snackBar.open('اطلاعات صحیح میباشد','Close',  {
+            panelClass: ['app-notification-success'],
 
+        })
         }
         else{
-    // this._snackBar.open( 'لطفا اطلاعات خود را کامل کنید','Close', {
-    //   panelClass: 'app-notification-error',
-    // })
+          this.buttonDisabled = true;
+    this._snackBar.open( 'اطلاعات وارد شده صحیح نمیباشد','Close', {
+      panelClass: 'app-notification-error',
+    })
+    
     
         }
       }
