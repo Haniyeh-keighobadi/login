@@ -41,7 +41,6 @@ export interface DialogData {
     }
     dataSource:any;
     dataSourceSelect:any;
-
     FirstName:string='';
     LastName:string='';
     Gender:string='';

@@ -10,14 +10,14 @@
         </div>
         <mat-label class="loginlable">ورود به سامانه</mat-label>
         <mat-form-field class="formInput" dir="rtl">
-            <mat-label>نام کاربری</mat-label>
-            <input matInput type="text">
+            <mat-label >نام کاربری</mat-label>
+            <input matInput type="text"  [(ngModel)]="username" name="username" [ngModelOptions]="{standalone: true}">
           </mat-form-field>
           <mat-form-field class="formInput2" dir="rtl">
             <mat-label>کلمه عبور</mat-label>
-            <input matInput type="text">
+            <input matInput type="text"  [(ngModel)]="password" name="password">
           </mat-form-field>
-          <button mat-raised-button class="loginBtn" dir="rtl">ورود</button>
+          <button mat-raised-button class="loginBtn" dir="rtl" (click)="onsubmit()">ورود</button>
           <button mat-raised-button class="signuptBtn" dir="rtl">ثبت نام</button>
           <mat-label class="passlable"><a href="https://www.google.com">بازیابی کلمه عبور</a></mat-label>
     </div>
